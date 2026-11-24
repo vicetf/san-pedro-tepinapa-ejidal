@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Conoce las fuentes económicas de San Pedro Tepinapa Ejidal, Santiago Jocotepec, Oaxaca.">
+
+    <title>Fuentes económicas | San Pedro Tepinapa Ejidal</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="menu">
+
+        <img src="imagenes/img9.jpeg"
+             alt="Paisaje de San Pedro Tepinapa Ejidal">
+
+        <div class="contenido">
+
+            <h1>SAN PEDRO TEPINAPA EJIDAL</h1>
+
+            <p>SANTIAGO JOCOTEPEC, OAXACA, MÉXICO</p>
+
+            <!-- MENÚ DE NAVEGACIÓN -->
+            <nav class="opciones" aria-label="Menú principal">
+
+                <a href="micomunidad.html">INICIO</a>
+
+                <!-- MENÚ DESPLEGABLE -->
+                <div class="desplegable">
+
+                    <button
+                        class="boton-menu"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="lista-comunidad"
+                        onclick="
+                            const lista = document.getElementById('lista-comunidad');
+                            const abierto = lista.classList.toggle('mostrar');
+                            this.setAttribute('aria-expanded', abierto);
+                        ">
+
+                        MI COMUNIDAD
+
+                    </button>
+
+                    <ul class="lista" id="lista-comunidad">
+
+                        <li>
+                            <a href="caracteristicas.html">
+                                Características
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="recursosnaturales.html">
+                                Recursos naturales
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="festividades.html">
+                                Costumbres y tradiciones
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fuenteseconomicas.html">
+                                Fuentes económicas
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <a href="galeria.html">GALERÍA</a>
+
+                <a href="ubicacion.html">UBICACIÓN</a>
+
+                <a href="contacto.html">CONTACTO</a>
+
+                <a href="acercade.html">ACERCA DE</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="menutex">
+
+        <!-- INTRODUCCIÓN -->
+        <section class="caracte">
+
+            <h2>Fuentes económicas</h2>
+
+            <p>
+                Las principales fuentes económicas de mi comunidad están relacionadas con el
+                trabajo del campo y las actividades que realizan sus habitantes para mantener a sus
+                familias. Entre ellas se encuentran:
+            </p>
+
+        </section>
+
+
+        <!-- ACTIVIDADES ECONÓMICAS -->
+        <div class="decoracion izquierda">
+
+            <section class="imagentexcarac"
+                     aria-label="Principales fuentes económicas">
+
+
+                <!-- AGRICULTURA Y CULTIVO DE ALIMENTOS -->
+                <article class="tarjeta">
+
+                    <h3>La agricultura y el cultivo de alimentos.</h3>
+
+                    <img src="imagenes/img22.jpg"
+                         alt="Agricultura">
+
+                    <p>
+                        La mayoría de los habitantes se
+                        dedican a la siembra, el cultivo y la cosecha de diferentes tipos de productos
+                        vegetales y frutales que ofrece la región. Estos productos normalmente se utilizan
+                        para el consumo diario de las familias, mientras que otras personas se dedican a
+                        venderlos a los habitantes que no tienen la posibilidad de sembrar sus propios
+                        alimentos.
+                    </p>
+
+                    <img src="imagenes/img28.jpeg"
+                         alt="Totopos"
+                         style="max-width: 300px; height: 360px;">
+
+                    <p>
+                        Uno de los principales alimentos que se siembran en la comunidad es el maíz, ya que
+                        existe la costumbre de acompañar las comidas con tortillas (totopos y tlayudas). Las
+                        mujeres son las que participan en la elaboración de las tortillas, que utilizan ya sea
+                        para el consumo de sus propias familias o para venderlos a otros hogares que no
+                        cuentan con el tiempo suficiente para preparar sus propias tortillas.
+                    </p>
+
+                </article>
+
+
+                <!-- CRIANZA DE ANIMALES -->
+                <article class="tarjeta">
+
+                    <h3>La crianza de animales</h3>
+
+                    <img src="imagenes/img26.jpeg"
+                         alt="Crianza de animales"
+                         style="max-width: 550px; height: 520px;">
+
+                    <p>
+                        Otra de las fuentes económicas de mi comunidad es la crianza de animales, como
+                        ganado, puercos, pollos, patos, guajolotes y diferentes tipos de peces que se
+                        consumen en la región. La mayoría de estos animales son criados para el consumo
+                        de las propias familias, mientras que otras personas se dedican a venderlos, ya sea
+                        por su carne o en pie (el animal vivo).
+                    </p>
+
+                </article>
+
+
+                <!-- TRABAJOS Y SERVICIOS -->
+                <article class="tarjeta">
+
+                    <h3>Los trabajos y servicios que realizan los habitantes.</h3>
+
+                    <img src="imagenes/img24.jpeg"
+                         alt="Ganado">
+
+                    <img src="imagenes/img1.jpeg"
+                         alt="Trabajadores de la comunidad">
+
+                    <p>
+                        Otra de las fuentes económicas de mi comunidad son los diferentes trabajos y
+                        servicios que realizan sus habitantes. Algunas personas se dedican a la albañilería,
+                        carpintería, mecánica, costura, venta de alimentos, venta de productos
+                        como: bebidas alcohólicas, refrescos, alimentos enlatados, ropa y calzado, así como
+                        a otros oficios que ayudan en las necesidades de la población. También hay personas
+                        que trabajan fuera de la comunidad y regresan para apoyar económicamente a sus
+                        familias. Estas actividades permiten obtener ingresos y contribuyen al desarrollo y
+                        bienestar de la comunidad.
+                    </p>
+
+                </article>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <h2>San Pedro Tepinapa Ejidal</h2>
+
+        <p>
+            Un espacio dedicado a compartir información,
+            historia, cultura y tradiciones de nuestra comunidad.
+        </p>
+
+        <p>
+            © 2026 | Página creada por Vicente Feria Luna.
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,586 @@
+/* ==========================================
+   ESTILO VISUAL - SAN PEDRO TEPINAPA EJIDAL
+   Diseño moderno inspirado en naturaleza y comunidad
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352f;
+    background: #eef4ef;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+.menu {
+    background: linear-gradient(135deg, #123c35 0%, #1f5b4d 55%, #2d735b 100%);
+    display: flex;
+    align-items: center;
+    padding: 22px 28px;
+    gap: 28px;
+    box-shadow: 0 5px 18px rgba(18, 60, 53, 0.22);
+    border-bottom: 4px solid #d8b45a;
+}
+
+.menu img {
+    width: 130px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.22);
+}
+
+.contenido {
+    flex: 1;
+    min-width: 0;
+}
+
+.contenido h1 {
+    color: #ffffff;
+    font-size: 56px;
+    letter-spacing: 1px;
+    margin: 0 0 6px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.contenido p {
+    color: #e3f2ec;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin: 0 0 18px;
+}
+
+/* NAVEGACIÓN */
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+.opciones > a,
+.boton-menu {
+    color: #ffffff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 11px 18px;
+    border-radius: 999px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.opciones > a:hover,
+.boton-menu:hover {
+    background: #d8b45a;
+    color: #173b34;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* MENÚ DESPLEGABLE */
+.desplegable {
+    position: relative;
+}
+
+.boton-menu {
+    display: block;
+}
+
+.boton-menu span {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.lista {
+    display: none;
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+    background: #ffffff;
+    list-style: none;
+    padding: 7px;
+    margin: 0;
+    min-width: 205px;
+    border-radius: 12px;
+    z-index: 1000;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    border: 1px solid #dce8e1;
+}
+
+.desplegable:hover .lista,
+.desplegable:focus-within .lista,
+.lista.mostrar {
+    display: block;
+}
+
+.lista li a {
+    display: block;
+    color: #23453c;
+    text-decoration: none;
+    background: transparent;
+    padding: 11px 13px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lista li a:hover {
+    background: #e5f0e9;
+    color: #9a7627;
+    transform: none;
+}
+
+/* CONTENIDO GENERAL */
+.menutex {
+    background:
+        radial-gradient(circle at top right, rgba(216, 180, 90, 0.14), transparent 30%),
+        linear-gradient(180deg, #eef4ef 0%, #f7f9f6 100%);
+    padding: 58px 24px 72px;
+    min-height: 55vh;
+}
+
+/* BLOQUE DE TÍTULO */
+.caracte {
+    text-align: center;
+    margin: 0 auto 42px;
+    max-width: 900px;
+}
+
+.caracte h2 {
+    color: #1f5b4d;
+    font-size: 34px;
+    margin: 0 0 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.caracte p {
+    color: #5b6862;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* IMAGEN + TEXTO */
+.imagentex {
+    display: flex;
+    align-items: center;
+    padding: 18px 22px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.imagentex img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenidotex {
+    flex: 1;
+    min-width: 250px;
+}
+
+.texto {
+    width: 100%;
+}
+
+.texto p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* CONTENEDOR DE TARJETAS */
+.imagentexcarac {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(31, 91, 77, 0.10);
+    border: 1px solid #dce8e1;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(31, 91, 77, 0.16);
+}
+
+.tarjetaubi {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 90px;
+    border-radius: 30px;
+    box-shadow: 0 12px 34px rgba(31, 91, 77, 0.12);
+    border: 1px solid #dce8e1;
+    text-align: center;
+}
+
+.tarjetamenu {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 34px rgba(31, 91, 77, 0.12);
+    border: 1px solid #dce8e1;
+    text-align: center;
+}
+
+/* IMÁGENES - DIMENSIONES CONSERVADAS */
+.tarjeta img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: 380px;
+    object-fit: cover;
+    margin: 0 auto 22px;
+    border-radius: 12px;
+}
+
+.tarjetaubi iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+}
+/* PUBLICACIONES DE FACEBOOK */
+.facebook-publicaciones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.facebook-publicaciones iframe {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+.tarjetamenu img {
+    display: block;
+    width: 100%;
+    max-width: 890px;
+    height: 510px;
+    object-fit: cover;
+    margin: 0 auto 22px;
+    border-radius: 12px;
+}
+
+/* TEXTO DE TARJETAS */
+.tarjeta p {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #46534e;
+    font-size: 19px;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+.tarjeta h2,
+.tarjeta h3,
+.tarjetaubi h2,
+.tarjetamenu h2 {
+    color: #1f5b4d;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #123c35;
+    color: white;
+    padding: 42px 20px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    border-top: 4px solid #d8b45a;
+}
+
+footer h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #d9e8e2;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+/* CONTACTO */
+.boton-correo {
+    display: inline-block;
+    background: #d8b45a;
+    color: #173b34;
+    padding: 12px 34px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 12px rgba(154, 118, 39, 0.20);
+}
+
+.boton-correo:hover {
+    background: #b9913e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.datos-contacto {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dato {
+    background: #eef5f0;
+    padding: 18px;
+    border-radius: 14px;
+    text-align: left;
+    border-left: 5px solid #2d735b;
+}
+
+.dato h3 {
+    color: #1f5b4d;
+    margin: 0 0 10px;
+}
+
+.dato p {
+    line-height: 1.6;
+}
+
+.dato a {
+    color: #1f5b4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dato a:hover {
+    text-decoration: underline;
+}
+.facebook {
+    display: inline-block;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    transform: translate(1220px, 0px);
+}
+
+.facebook img {
+    display: block;
+    width: 45px;
+    height: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.facebook2 {
+    display: inline-block;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    transform: translate(350px, 0px);
+}
+
+.facebook2 img {
+    display: block;
+    width: 45px;
+    height: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.cubicacion {
+    width: 100%;
+    display: grid;
+    gap: 35px;
+    margin-top: 30px;
+    align-items: start;
+}
+.cubicacion iframe {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+
+/* CELULARES Y TABLETAS */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px 20px;
+    }
+
+    .menu img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .contenido h1 {
+        font-size: 22px;
+    }
+
+    .contenido p {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+    }
+
+    .opciones {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .opciones > a,
+    .boton-menu {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .desplegable {
+        width: 100%;
+    }
+
+    .lista {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .lista li a {
+        text-align: center;
+    }
+
+    .imagentex {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .imagentex img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenidotex {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .texto p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .menutex {
+        padding: 35px 12px 45px;
+    }
+
+    .caracte h2 {
+        font-size: 25px;
+    }
+
+    .tarjeta {
+        padding: 15px;
+    }
+
+    .tarjeta img {
+        height: 220px;
+    }
+
+    .tarjeta p {
+        font-size: 17px;
+        padding: 0 5px;
+    }
+
+    .boton-correo {
+        background: #d8b45a;
+        color: #173b34;
+        padding: 8px 15px;
+        font-size: 13px;
+        border-radius: 999px;
+    }
+
+    .tarjetaubi {
+        padding: 35px 20px;
+    }
+
+    .tarjetamenu {
+        padding: 25px 15px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+
+    footer h2 {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+    .facebook {
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px 12px;
+    transform: translate(2px, 0px);
+    }
+    .facebook img{
+        background-color: transparent;
+        height: auto;
+        width: 45px;
+    }
+    .facebook2 {
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px 12px;
+    transform: translate(190px, 0px);
+    }
+    .facebook2 img{
+        background-color: transparent;
+        height: auto;
+        width: 45px;
+    }
+}
